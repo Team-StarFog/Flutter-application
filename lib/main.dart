@@ -1,26 +1,15 @@
 import 'package:flutter/material.dart';
-
+import 'package:projecct_dc/landingpage.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text('App')),
-        body:Align(
-          alignment: Alignment.topCenter,
-          child: Container(
-            width: double.infinity, height: 50, color: Colors.blue,
-          ),
-        ),
-
-      ),
+      home: LandingPage(),
     );
-
   }
 }
